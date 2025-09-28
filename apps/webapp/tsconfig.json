@@ -3,16 +3,7 @@
   "include": [],
   "references": [
     {
-      "path": "../../libs/elements"
-    },
-    {
-      "path": "../../libs/core"
-    },
-    {
       "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
     }
   ],
   "extends": "../../tsconfig.base.json"

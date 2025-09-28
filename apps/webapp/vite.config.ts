@@ -1,26 +1,23 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import path from 'path';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig(() => ({
   root: __dirname,
-  cacheDir: '../../node_modules/.vite/apps/client',
-  resolve: {
-    alias: {
-      '@/*': path.resolve(__dirname, './src/*'),
-    },
-  },
+  cacheDir: '../../node_modules/.vite/apps/webapp',
   server: {
-    port: 4200,
+    port: 4400,
     host: 'localhost',
   },
   preview: {
-    port: 4300,
+    port: 4400,
     host: 'localhost',
   },
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react()],
+  // Uncomment this if you are using workers.
+  // worker: {
+  //  plugins: [ nxViteTsPaths() ],
+  // },
   build: {
     outDir: './dist',
     emptyOutDir: true,

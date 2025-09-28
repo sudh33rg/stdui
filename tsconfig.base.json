@@ -16,6 +16,12 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
-    "customConditions": ["@studio-ui/source"]
+    "customConditions": ["@studio-ui/source"],
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@studio-ui/core": ["libs/core/src/index.ts"],
+      "@studio-ui/elements": ["libs/elements/src/index.ts"]
+    }
   }
 }

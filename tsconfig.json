@@ -5,6 +5,15 @@
   "references": [
     {
       "path": "./apps/client"
+    },
+    {
+      "path": "./libs/core"
+    },
+    {
+      "path": "./libs/elements"
+    },
+    {
+      "path": "./apps/webapp"
     }
   ]
 }
